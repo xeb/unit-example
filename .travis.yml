@@ -1,5 +1,11 @@
 language: cpp
 
+before_script:
+ - wget http://downloads.sourceforge.net/project/unitpp/unit%2B%2B-3.0.0.tgz
+ - tar xvf *.tgz
+ - ./configure
+ - make install
+
 script:
  - make
  - make test
