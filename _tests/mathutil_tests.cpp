@@ -11,6 +11,7 @@ namespace {
 		void testIsPrime() 
 		{
 			assert_true("3 is prime", IsPrime(3));
+			assert_false("2 is prime", IsPrime(4));
 		}
 	public:
 		MathUtilTests() : suite("TestFactorial")
