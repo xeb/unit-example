@@ -6,9 +6,8 @@ before_script:
  - cd unit*
  - ./configure
  - sudo make install
+ - cd ~
 
 script:
  - make
- - make test
- # - g++ -o test _tests/mathutil_tests.cpp mathutil.cpp -lunit++ -Wall # I'm just trying out this terrible idea; Is Travis is fucking with the makefile??
- # - ./test
+ # - make test
