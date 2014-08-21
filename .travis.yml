@@ -6,7 +6,7 @@ before_script:
  - cd unit*
  - ./configure
  - sudo make install
- - cd ~
+ - cd ../
 
 script:
  - make
