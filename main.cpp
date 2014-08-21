@@ -9,9 +9,9 @@ int main(int argc, char *argv[])
 
 	for(int i = 0; i < sizeof(nums); i++)
 	{
-		printf("Is %d Prime? %s", nums[i], IsPrime(nums[i]));
+		printf("Is %d Prime? %s\n", nums[i], IsPrime(nums[i]) == 0 ? "YES!" : "no...");
 	}
 
-	print("All done");
+	printf("All done");
 	return 0;
 }
