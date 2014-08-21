@@ -1,7 +1,7 @@
 language: cpp
 
 before_script:
- - wget http://downloads.sourceforge.net/project/unitpp/unit%2B%2B-3.0.0.tgz
+ - wget https://github.com/xeb/unit-example/raw/master/contrib/unit%2B%2B-3.0.0.tgz
  - tar xvf *.tgz
  - cd unit*
  - ./configure
