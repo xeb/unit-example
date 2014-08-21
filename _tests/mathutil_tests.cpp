@@ -1,23 +1,23 @@
 #include <unit++.h>
 #include <string>
+#include "../mathutil.h"
+
 using namespace std;
 using namespace unitpp;
 
 namespace {
-	class YourTest : public suite
+	class MathUtilTests : public suite
 	{
-		void testEmptyString() 
+		void testIsPrime() 
 		{
-			string joe;
-			assert_eq("length check", (unsigned int) 0, joe.length() );  // parameter order: text, expected, actual
-			assert_eq("content check", "", joe);
+			assert_true("3 is prime", IsPrime(3));
 		}
 	public:
-		YourTest() : suite("YourFirstTest")
+		MathUtilTests() : suite("TestFactorial")
 		{
-			add("EmptyString", testcase(this, "TestEmptyString", &YourTest::testEmptyString));
-			suite::main().add("YourTestSuite", this);
+			add("IsPrime", testcase(this, "TestPrime", &MathUtilTests::testIsPrime));
+			suite::main().add("MathUtilTests", this);
 		}
 	};
-	suite * theTest = new YourTest();
+	suite * theTest = new MathUtilTests();
 }
