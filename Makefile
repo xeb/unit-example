@@ -8,6 +8,8 @@ OBJECTS=$(MAIN_SOURCE:.cpp=.o) $(SOURCES:.cpp=.o)
 EXECUTABLE=main
 TEST_EXECUTABLE=test
 
+.PHONY: test
+
 all: $(SOURCES) $(EXECUTABLE)
 	
 $(EXECUTABLE): $(OBJECTS) 
