@@ -1,6 +1,6 @@
 #include <unit++.h>
 #include <string>
-#include "../mathutil.h"
+#include "../src/mathutil.h"
 
 using namespace std;
 using namespace unitpp;

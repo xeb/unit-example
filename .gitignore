@@ -20,5 +20,6 @@
 *.out
 *.app
 
+build/*
 sonar-runner-2.4/
 sonar-runner-dist-2.4.zip
